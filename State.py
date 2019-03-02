@@ -183,7 +183,7 @@ class State(object):
 
 
     def can_become_adult(self):
-        return self.world.starting_age == 'adult' or self.has('Beyond Door of Time', age='child')
+        return self.world.starting_age == 'adult' or self.can_reach('Beyond Door of Time', age='child')
 
 
     def can_become_child(self):
