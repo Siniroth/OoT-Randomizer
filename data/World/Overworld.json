@@ -755,8 +755,11 @@
                 is_child and 
                 (has_explosives or (Progressive_Strength_Upgrade and logic_child_rolling_with_strength))",
             "Link the Goron": "
-                is_adult and 
-                (Progressive_Strength_Upgrade or has_explosives or has_bow)",
+                is_adult and
+                (Progressive_Strength_Upgrade or has_explosives or "has_bow)",
+            "Medigoron": "
+                is_adult and
+                (can_blast_or_smash or Progressive_Strength_Upgrade)",
             "GS Goron City Boulder Maze": "is_child and has_explosives",
             "GS Goron City Center Platform": "is_adult",
             "Goron City Stick Pot": "is_child",

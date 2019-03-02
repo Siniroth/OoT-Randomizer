@@ -125,6 +125,7 @@ location_table = {
     "King Zora Moves":                                 ("Event",       None,  None, "Zora's Domain",          None,                     None),
     "Master Sword Pedestal":                           ("Event",       None,  None, "Temple of Time",         None,                     None),
     "Epona":                                           ("Event",       None,  None, "Lon Lon Ranch",          None,                     None),
+    "Medigoron":                                       ("Event",       None,  None, "Goron City",             None,                     ("Goron City",)),
     "Deku Baba Sticks":                                ("Event",       None,  None, "Kokiri Forest",          None,                     None),
     "Deku Baba Nuts":                                  ("Event",       None,  None, "Kokiri Forest",          None,                     None),
     "Goron City Stick Pot":                            ("Event",       None,  None, "Goron City",             None,                     None),

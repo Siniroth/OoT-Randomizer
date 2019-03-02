@@ -183,7 +183,7 @@ class State(object):
 
 
     def can_become_adult(self):
-        return self.world.starting_age == 'adult' or self.has('Master Sword')
+        return self.world.starting_age == 'adult' or self.has('Beyond Door of Time', age='child')
 
 
     def can_become_child(self):
@@ -207,7 +207,16 @@ class State(object):
                     self.has('Kokiri Sword') or \
                     self.can_use('Dins Fire'))
 
+    def can_adult_slash(self):
+        return  self.is_adult() and \
+                    (self.has('Master Sword') or \
+                     self.has('Biggoron Sword') or \
+                     self.can_buy_Knife)
+    
+    def can_buy_Knife(self):
+        return  self.has('Progressive Wallet') and can_reach('Medigoron')
 
+    
     def can_stun_deku(self):
         return  self.is_adult() or \
                 self.can_child_attack() or \
